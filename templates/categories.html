@@ -1,0 +1,24 @@
+{% extends "basic_template.html" %}
+
+{% block body %}
+
+<div class="container">
+       <div  style="padding: 1rem;" align='center'>
+	        <div class="content-wrap text-center">
+	            <h1>Braniac Quiz<br><br><p>Select Your Category</p></h1><hr size='30'>
+	        </div>
+	        
+	        <div class ="wrap text-center">
+				<ul>
+					{% for i in range(23) %}
+                    <h4><a  href="/question/{{category_id[i]}}">{{category[i]}}<br></a></h4>
+					{% endfor %}
+				</ul>
+		<hr size='30'>
+			</div>
+	        
+        </div>
+</div>
+
+
+{% endblock %}
